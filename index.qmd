@@ -1,0 +1,19 @@
+# Introduction {.unnumbered}
+
+<!-- DO NOT TOUCH THIS PART EXCEPT FILLING YOUR OR YOUR GROUP's NAME -->
+
+This progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]'s work during their term at [BDA 503 Fall 2022](https://mef-bda503.github.io/fall22/).
+
+Each section is an assignment or an individual work.
+
+<!-- IF THIS IS A GROUP UNCOMMENT BELOW -->
+
+<!-- # Group Members
+
++ [Member 1](Member 1's Progress Journal URL with https://)  
++ [Member 2](Member 2's Progress Journal URL with https://)
++ [Member 3](Member 3's Progress Journal URL with https://)
+
+# Group Project Details
+
+Our group project is [PROJECT NAME]. [SHORT DESCRIPTION] -->

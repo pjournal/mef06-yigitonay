@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "[STUDENT/GROUP NAME] Progress Journal",
+    "section": "",
+    "text": "This progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "assignment1.html",
+    "href": "assignment1.html",
+    "title": "1  Assignment 1",
+    "section": "",
+    "text": "set.seed(1)\nvec1 <- sample(LETTERS,5)\npaste0(vec1,collapse=\"\")\n\n[1] \"YDGAB\""
+  }
+]
