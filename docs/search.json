@@ -2,36 +2,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "[STUDENT/GROUP NAME] Progress Journal",
+    "title": "Yigit Onay Progress Journal",
     "section": "",
-    "text": "This progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "This progress journal covers Yiğit Onay’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
   },
   {
     "objectID": "assignment1.html",
     "href": "assignment1.html",
-    "title": "1  Assignment 1",
+    "title": "1  BDA-503 Data Analytics Essentials: Assignment 1",
     "section": "",
-    "text": "set.seed(1)\nvec1 <- sample(LETTERS,5)\npaste0(vec1,collapse=\"\")\n\n[1] \"YDGAB\""
+    "text": "Hi. This is Yigit. I was born in Ankara, in 1990. I obtained my undergraduate degree from Department of Economics at Bogazici University. After my graduation, I passed the three-stage examination process of Turkiye İş Bankası and started as assistant auditor, which gave me a solid background in banking sector such as the business structure of both headquarters, branches, and their subsidiaries, risk analysis of loan portfolios of corporates and SMEs.\nAs an advancement in my career, I passed the researcher examination of The Central Bank of Republic of Turkey (CBRT) Turkey, and started to work as a researcher. Currently, I am working in Markets Department as an assistant economist in CBRT. My fields of interests consist of macroeconomics, financial modelling and empirical asset pricing in general. To be more specific, most of my studies are about pricing of financial derivatives. Some of my papers with my colleagues are The Determinants of Currency Risk Premium in Emerging Market Countries, A Measure of Turkey’s Sovereign and Banking Sector Credit Risk: Asset Swap Spreads.\nAs we live in a world of massive data, being able to use them efficiently is crucial. The processes of collecting data, analysing them, illustrating the results and preparing automated reports as well as being able to apply modern machine learning techniques to macro-financial data are the main accomplishments I want to make at the end of the Big Data Analytics program.\nYou can reach me via my linkedin page."
+  },
+  {
+    "objectID": "assignment1.html#user-2022-videos",
+    "href": "assignment1.html#user-2022-videos",
+    "title": "1  BDA-503 Data Analytics Essentials: Assignment 1",
+    "section": "1.2 UseR-2022 Videos",
+    "text": "1.2 UseR-2022 Videos\nThis section summarise the speech given by Devin Pastoor titled Websites & Books & Blogs, oh my! Creating Rich Content with Quarto during RStudio Global 2022 conference. I chose this topic as Quarto is the main tool for scripting our coursework in our course this semester and “Devin Pastorr” decribes the novalties Quarto brings to business and academics.\nThe opportunity to build on a unit of Rmarkdown into more complex content such as websites, books and blogs required additional programs to which lots of effort had been made.In this regard, many different packages/programs had been introduced, such as bookdown or blogdown, which results in the seperation of the comnnutiy.\nDevin Pastoor emphasizes the signficance of Quarto as it\n\nunifies teams across language boundaries and procedural differences and\ngives unparalelled ability to processing and producing the content in various forms."
+  },
+  {
+    "objectID": "assignment1.html#miscallaneous-r-posts",
+    "href": "assignment1.html#miscallaneous-r-posts",
+    "title": "1  BDA-503 Data Analytics Essentials: Assignment 1",
+    "section": "1.3 Miscallaneous R-Posts",
+    "text": "1.3 Miscallaneous R-Posts\nIn this section, 3 R-posts are chosen to be outlined.\n\n1.3.1 Difference between R and Python\nThis post discusses the main properties of R and Python and overview their similarities and differences.\n\n\n\n\nFigure-1\n\n\n\nR\n\nR has undergone two decades of development by statisticians and academics.\nIt is the preferred choice for statistical analysis, especially for specialist analytical work, thanks to its extensive library.\n\nPython\n\nPython is a tool for large-scale machine learning deployment and implementation.\nIt is able to perform many of the same activities as R, including data manipulation, engineering, feature selection, web scraping, and app development.\n\nComparing R & Python;\nTheir similarities include - Both the open-source programming languages R and Python have a sizable user base - Their individual catalogs are always being updated with new libraries or tools. - Both can manage very large databases.\nThey differ in certain ways such that: - Python offers a more all-encompassing approach to data science whereas R is primarily employed for statistical analysis. - Python users tend to be programmers and developers, whereas R users are primarily academics and R&D experts. - R is initially challenging to learn, but Python is linear and simple to understand.\n\n\n1.3.2 Visualizing OLS Linear Regression Assumptions in R\nThis post illustrates some of the assumptions of classical linear regression model which are:\n\nWeak Exogeneity\nLinearity\nConstant Variance\nIndependence of Errors\nLack of Perfect Multicollinearity\n\nLinearity\nLinearity is likely the easiest assumption to visualize as you can simply use the following code snippet to quickly create a scatterplot.\n\n\n\n\nFigure-2.1\n\n\n\nMulticollinearity\nThe convenient way to search for existence of correlation between variables it to plot correlation matrix.\n\n\n\n\nFigure-2.2\n\n\n\nAutocorrelation\nCreating autocorrelation function plot via stats library in R helps detect existence of autocorrelation among error terms statistically.\n\nlibrary(stats)\nmodel <- lm(mpg~drat, data=mtcars)\nacf(model$residuals, type=\"correlation\")\n\n\n\n\n\nFigure-2.3\n\n\n\n\n\n1.3.3 The K-Means Clustering Algorithm Intuition Demonstrated In R\nThis section presents a blogpost by Vincent Tabora demonstrating the K-Means Clustering Algorithm, which is an unsupervised learning method that aims to identify clusters or groups within a given dataset. Each cluster will have a centroid containing the data points or vectors closest to it. It is an iterative process that does not have a predetermined value of how many times to perform.\nSimplified steps for K-Means Clustering are:\n1- Choose the number of clusters K.\n2- Select random K points or the centroids.\n3- Assign the data points to their closest centroids by Euclidean distance.\n4- Reassign data points if they fall closer to another cluster. Compute and place new centroids in the cluster.\n5- Repeat step 3 and 4 until all data points can be grouped in a cluster without re-assigning.\nOptimal Number of Clusters\nA technique called the Elbow Method to find the optimal number of clusters in dataset.\n\nwcss <- vector()\nfor (i in 1:10) wcss[i] <- sum(kmeans(X, i)$withinss)\nplot(1:10, wcss, type = 'b', main = paste('Clusters of Clients'), xlab = 'Number of Clusters', ylab = 'WCSS')\n\nThe rule is to choose the point at which the plot starts decreasing in a linear fashion.\n\n\n\n\nFigure-3.1\n\n\n\nClustering Algorithm\nDataset is into groups using K-Means Clustering. The formula used in K-Means uses the within-cluster sum of squares (wcss) for measuring the compactness of the cluster.\nEach of the observations (Xi) are assigned to a cluster such that the sum of squares (SS) distance of the observations to their assigned cluster centers (μk) are at a minimum.\n\n\n\n\nkmeans <- kmeans(X, 5, iter.max = 300, nstart = 10)\nlibrary(cluster)\nclusplot(X,\n         kmeans$cluster,\n         lines = 0,\n         shade = TRUE,\n         labels = 2,\n         plotchar = FALSE,\n         span = TRUE,\n         main = paste('Clusters of Clients'),\n         xlab = 'Annual Income',\n         ylab = 'Spending Score')\n\nThe result will be to gather insights on the dataset in order to make informed decisions.\nWhat the data shows is that people with high incomes will not always spend higher than everyone else, and there are people with low income who are big spenders.\n\n\n\n\nFigure-3.2"
   }
 ]

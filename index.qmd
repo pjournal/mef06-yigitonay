@@ -2,7 +2,7 @@
 
 <!-- DO NOT TOUCH THIS PART EXCEPT FILLING YOUR OR YOUR GROUP's NAME -->
 
-This progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]'s work during their term at [BDA 503 Fall 2022](https://mef-bda503.github.io/fall22/).
+This progress journal covers Yiğit Onay's work during their term at [BDA 503 Fall 2022](https://mef-bda503.github.io/fall22/).
 
 Each section is an assignment or an individual work.
 

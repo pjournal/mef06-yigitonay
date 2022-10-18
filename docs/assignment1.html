@@ -2,20 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.1.251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-10-01">
+<meta name="author" content="Yiğit Onay">
+<meta name="dcterms.date" content="2022-10-16">
 
-<title>[STUDENT/GROUP NAME] Progress Journal - 1&nbsp; Assignment 1</title>
+<title>Yigit Onay Progress Journal - 1&nbsp; BDA-503 Data Analytics Essentials: Assignment 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -54,7 +60,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -67,7 +73,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -128,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Assignment 1</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>BDA-503 Data Analytics Essentials: Assignment 1</strong></span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -141,9 +147,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">[STUDENT/GROUP NAME] Progress Journal</a> 
+      <a href="./">Yigit Onay Progress Journal</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/pjournal/gh-pages-quarto-template" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/pjournal/mef06-yigitonay" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
     <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
     <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
         <li>
@@ -176,7 +182,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignment1.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Assignment 1</span></a>
+  <a href="./assignment1.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>BDA-503 Data Analytics Essentials: Assignment 1</strong></span></a>
   </div>
 </li>
     </ul>
@@ -184,25 +190,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introducing-myself" id="toc-introducing-myself" class="nav-link active" data-scroll-target="#introducing-myself"><span class="toc-section-number">1.1</span>  <strong>Introducing Myself</strong></a></li>
+  <li><a href="#user-2022-videos" id="toc-user-2022-videos" class="nav-link" data-scroll-target="#user-2022-videos"><span class="toc-section-number">1.2</span>  <strong>UseR-2022 Videos</strong></a></li>
+  <li><a href="#miscallaneous-r-posts" id="toc-miscallaneous-r-posts" class="nav-link" data-scroll-target="#miscallaneous-r-posts"><span class="toc-section-number">1.3</span>  <strong>Miscallaneous R-Posts</strong></a>
+  <ul class="collapse">
+  <li><a href="#difference-between-r-and-python" id="toc-difference-between-r-and-python" class="nav-link" data-scroll-target="#difference-between-r-and-python"><span class="toc-section-number">1.3.1</span>  <strong>Difference between R and Python</strong></a></li>
+  <li><a href="#visualizing-ols-linear-regression-assumptions-in-r" id="toc-visualizing-ols-linear-regression-assumptions-in-r" class="nav-link" data-scroll-target="#visualizing-ols-linear-regression-assumptions-in-r"><span class="toc-section-number">1.3.2</span>  <strong>Visualizing OLS Linear Regression Assumptions in R</strong></a></li>
+  <li><a href="#the-k-means-clustering-algorithm-intuition-demonstrated-in-r" id="toc-the-k-means-clustering-algorithm-intuition-demonstrated-in-r" class="nav-link" data-scroll-target="#the-k-means-clustering-algorithm-intuition-demonstrated-in-r"><span class="toc-section-number">1.3.3</span>  <strong>The K-Means Clustering Algorithm Intuition Demonstrated In R</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Assignment 1</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>BDA-503 Data Analytics Essentials: Assignment 1</strong></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><em>Yiğit Onay</em> </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 1, 2022</p>
+      <p class="date">October 16, 2022</p>
     </div>
   </div>
     
@@ -211,17 +236,159 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>This is a template example qmd output page. You may see an example R code below.</p>
+<section id="introducing-myself" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introducing-myself"><span class="header-section-number">1.1</span> <strong>Introducing Myself</strong></h2>
+<p>Hi. This is Yigit. I was born in Ankara, in 1990. I obtained my undergraduate degree from <a href="https://econ.boun.edu.tr/tr">Department of Economics</a> at <a href="http://www.boun.edu.tr/tr-TR/Index">Bogazici University</a>. After my graduation, I passed the three-stage examination process of <a href="https://www.isbank.com.tr/">Turkiye İş Bankası</a> and started as assistant auditor, which gave me a solid background in banking sector such as the business structure of both headquarters, branches, and their subsidiaries, risk analysis of loan portfolios of corporates and SMEs.</p>
+<p>As an advancement in my career, I passed the researcher examination of <a href="https://www.tcmb.gov.tr/wps/wcm/connect/en/tcmb+en">The Central Bank of Republic of Turkey (CBRT)</a> Turkey, and started to work as a researcher. Currently, I am working in Markets Department as an assistant economist in CBRT. My fields of interests consist of macroeconomics, financial modelling and empirical asset pricing in general. To be more specific, most of my studies are about pricing of financial derivatives. Some of my papers with my colleagues are <a href="https://www.tcmb.gov.tr/wps/wcm/connect/5a53ac0b-b8dc-4dca-9e11-9bb38d6b5d00/en1806eng.pdf?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE-5a53ac0b-b8dc-4dca-9e11-9bb38d6b5d00-mpjRDdl"><em>The Determinants of Currency Risk Premium in Emerging Market Countries</em></a>, <a href="https://tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Publications/Research/Working+Paperss/2020/20-07"><em>A Measure of Turkey’s Sovereign and Banking Sector Credit Risk: Asset Swap Spreads</em></a>.</p>
+<p>As we live in a world of massive data, being able to use them efficiently is crucial. The processes of collecting data, analysing them, illustrating the results and preparing automated reports as well as being able to apply modern machine learning techniques to macro-financial data are the main accomplishments I want to make at the end of the <a href="https://bda.mef.edu.tr/en#gsc.tab=0">Big Data Analytics program</a>.</p>
+<p>You can reach me via my <a href="https://www.linkedin.com/in/yigit-onay-4a553531/"><em>linkedin</em></a> page.</p>
+</section>
+<section id="user-2022-videos" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="user-2022-videos"><span class="header-section-number">1.2</span> <strong>UseR-2022 Videos</strong></h2>
+<p>This section summarise the speech given by <em>Devin Pastoor</em> titled <a href="https://www.rstudio.com/conference/2022/talks/sessions/quarto-deep-dive/websites-books-blogs-quarto/">Websites &amp; Books &amp; Blogs, oh my! Creating Rich Content with Quarto</a> during <a href="https://www.rstudio.com/conference/2022/2022-conf-talks/">RStudio Global 2022 conference</a>. I chose this topic as Quarto is the main tool for scripting our coursework in our course this semester and “Devin Pastorr” decribes the novalties Quarto brings to business and academics.</p>
+<p>The opportunity to build on a unit of Rmarkdown into more complex content such as websites, books and blogs required additional programs to which lots of effort had been made.In this regard, many different packages/programs had been introduced, such as <a href="https://bookdown.org/">bookdown</a> or <a href="https://bookdown.org/yihui/blogdown/">blogdown</a>, which results in the seperation of the comnnutiy.</p>
+<p><em>Devin Pastoor</em> emphasizes the signficance of Quarto as it</p>
+<ul>
+<li>unifies teams across language boundaries and procedural differences and</li>
+<li>gives unparalelled ability to processing and producing the content in various forms.</li>
+</ul>
+<center>
+<img src="https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/imgs/quarto-all.jpeg" class="img-fluid">
+</center>
+</section>
+<section id="miscallaneous-r-posts" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="miscallaneous-r-posts"><span class="header-section-number">1.3</span> <strong>Miscallaneous R-Posts</strong></h2>
+<p>In this section, 3 R-posts are chosen to be outlined.</p>
+<section id="difference-between-r-and-python" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="difference-between-r-and-python"><span class="header-section-number">1.3.1</span> <strong>Difference between R and Python</strong></h3>
+<p>This post discusses the main properties of R and Python and overview their similarities and differences.</p>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.imaginarycloud.com/blog/content/images/2021/05/rvspython.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Figure-1</figcaption><p></p>
+</figure>
+</div>
+</center>
+<p><strong>R</strong></p>
+<ul>
+<li>R has undergone two decades of development by statisticians and academics.</li>
+<li>It is the preferred choice for statistical analysis, especially for specialist analytical work, thanks to its extensive library.</li>
+</ul>
+<p><strong>Python</strong></p>
+<ul>
+<li>Python is a tool for large-scale machine learning deployment and implementation.</li>
+<li>It is able to perform many of the same activities as R, including data manipulation, engineering, feature selection, web scraping, and app development.</li>
+</ul>
+<p>Comparing R &amp; Python;</p>
+<p>Their similarities include - Both the open-source programming languages R and Python have a sizable user base - Their individual catalogs are always being updated with new libraries or tools. - Both can manage very large databases.</p>
+<p>They differ in certain ways such that: - Python offers a more all-encompassing approach to data science whereas R is primarily employed for statistical analysis. - Python users tend to be programmers and developers, whereas R users are primarily academics and R&amp;D experts. - R is initially challenging to learn, but Python is linear and simple to understand.</p>
+</section>
+<section id="visualizing-ols-linear-regression-assumptions-in-r" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="visualizing-ols-linear-regression-assumptions-in-r"><span class="header-section-number">1.3.2</span> <strong>Visualizing OLS Linear Regression Assumptions in R</strong></h3>
+<p>This post illustrates some of the assumptions of <a href="https://en.wikipedia.org/wiki/Linear_regression#Assumptions">classical linear regression model</a> which are:</p>
+<ul>
+<li>Weak Exogeneity</li>
+<li>Linearity</li>
+<li>Constant Variance</li>
+<li>Independence of Errors</li>
+<li>Lack of Perfect Multicollinearity</li>
+</ul>
+<p><strong>Linearity</strong></p>
+<p>Linearity is likely the easiest assumption to visualize as you can simply use the following code snippet to quickly create a scatterplot.</p>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://i2.wp.com/cdn-images-1.medium.com/max/1024/1*JkKxXeMV1TVel2DpGXTeng.png?w=578&amp;ssl=1" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure-2.1</figcaption><p></p>
+</figure>
+</div>
+</center>
+<p><strong>Multicollinearity</strong></p>
+<p>The convenient way to search for existence of correlation between variables it to plot correlation matrix.</p>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://i2.wp.com/cdn-images-1.medium.com/max/1024/1*qmifRIV3wypB31zvdNFAeg.png?w=578&amp;ssl=1" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure-2.2</figcaption><p></p>
+</figure>
+</div>
+</center>
+<p><strong>Autocorrelation</strong></p>
+<p>Creating autocorrelation function plot via stats library in R helps detect existence of autocorrelation among error terms statistically.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>vec1 <span class="ot">&lt;-</span> <span class="fu">sample</span>(LETTERS,<span class="dv">5</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span>(vec1,<span class="at">collapse=</span><span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "YDGAB"</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stats)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg<span class="sc">~</span>drat, <span class="at">data=</span>mtcars)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(model<span class="sc">$</span>residuals, <span class="at">type=</span><span class="st">"correlation"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://miro.medium.com/max/640/1*PapIUx_TmSu_yyhyRkE5Pw.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure-2.3</figcaption><p></p>
+</figure>
 </div>
+</center>
+</section>
+<section id="the-k-means-clustering-algorithm-intuition-demonstrated-in-r" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="the-k-means-clustering-algorithm-intuition-demonstrated-in-r"><span class="header-section-number">1.3.3</span> <strong>The K-Means Clustering Algorithm Intuition Demonstrated In R</strong></h3>
+<p>This section presents a blogpost by <a href="https://medium.com/@vincenttabora"><em>Vincent Tabora</em></a> demonstrating the <a href="https://en.wikipedia.org/wiki/K-means_clustering">K-Means Clustering Algorithm</a>, which is an unsupervised learning method that aims to identify clusters or groups within a given dataset. Each cluster will have a centroid containing the data points or vectors closest to it. It is an iterative process that does not have a predetermined value of how many times to perform.</p>
+<p>Simplified steps for K-Means Clustering are:</p>
+<p>1- Choose the number of clusters K.</p>
+<p>2- Select random K points or the centroids.</p>
+<p>3- Assign the data points to their closest centroids by Euclidean distance.</p>
+<p>4- Reassign data points if they fall closer to another cluster. Compute and place new centroids in the cluster.</p>
+<p>5- Repeat step 3 and 4 until all data points can be grouped in a cluster without re-assigning.</p>
+<p><strong>Optimal Number of Clusters</strong></p>
+<p>A technique called the Elbow Method to find the optimal number of clusters in dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wcss <span class="ot">&lt;-</span> <span class="fu">vector</span>()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) wcss[i] <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">kmeans</span>(X, i)<span class="sc">$</span>withinss)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, wcss, <span class="at">type =</span> <span class="st">'b'</span>, <span class="at">main =</span> <span class="fu">paste</span>(<span class="st">'Clusters of Clients'</span>), <span class="at">xlab =</span> <span class="st">'Number of Clusters'</span>, <span class="at">ylab =</span> <span class="st">'WCSS'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The rule is to choose the point at which the plot starts decreasing in a linear fashion.</p>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://miro.medium.com/max/720/1*9rPveFNHY_YoqmVEyJDTgA.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure-3.1</figcaption><p></p>
+</figure>
+</div>
+</center>
+<p><strong>Clustering Algorithm</strong></p>
+<p>Dataset is into groups using K-Means Clustering. The formula used in K-Means uses the <em>within-cluster sum of squares (wcss)</em> for measuring the compactness of the cluster.</p>
+<p>Each of the observations (Xi) are assigned to a cluster such that the sum of squares (SS) distance of the observations to their assigned cluster centers (μk) are at a minimum.</p>
+<center>
+<img src="https://miro.medium.com/max/720/1*FcoAnXVLbLtLde3jBmE2xg.png" class="img-fluid">
+</center>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>kmeans <span class="ot">&lt;-</span> <span class="fu">kmeans</span>(X, <span class="dv">5</span>, <span class="at">iter.max =</span> <span class="dv">300</span>, <span class="at">nstart =</span> <span class="dv">10</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cluster)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">clusplot</span>(X,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>         kmeans<span class="sc">$</span>cluster,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">lines =</span> <span class="dv">0</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">shade =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">labels =</span> <span class="dv">2</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">plotchar =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">span =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">main =</span> <span class="fu">paste</span>(<span class="st">'Clusters of Clients'</span>),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">'Annual Income'</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylab =</span> <span class="st">'Spending Score'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The result will be to gather insights on the dataset in order to make informed decisions.</p>
+<p>What the data shows is that people with high incomes will not always spend higher than everyone else, and there are people with low income who are big spenders.</p>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://miro.medium.com/max/720/1*lYOUhKDB0rIpuXhG_17lEQ.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure-3.2</figcaption><p></p>
+</figure>
+</div>
+</center>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -293,7 +460,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
