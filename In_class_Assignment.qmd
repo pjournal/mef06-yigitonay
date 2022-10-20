@@ -1,0 +1,105 @@
+---
+title: "**In-Class Assignment 1**"
+author: "*Yiğit Onay*"
+highlight-style: pygments
+date: "2022-10-19"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 1
+---
+
+
+
+```{r, echo=FALSE, message=FALSE}
+library(nycflights13)
+library(tidyverse)
+library(ggplot2)
+```
+
+## **Case 1: Average Departure Delay**
+
+### **Average Departure Delay - Months of the Year**
+
+As seen in table below, delays per flight follows a similar pattern among three departure airports in the data:
+
+  - Delays seem to peak in the summer season. 
+  - December also stands out as one of the month when delays rise dramatically as compared to previous month for all three departure airports due to christmas effect.
+  - When considered with number of flights in respective times of the year, although there is no major differences across different months of the year in terms of the  number of flights, average delay time per flight changes drastically!. 
+  
+Important note for the results below is that, cancelled flights are excluded from calculations as delay information does not exist for those flights in the data table.
+
+```{r, message=FALSE}
+flights %>% 
+  filter(!is.na(dep_delay)) %>% 
+  group_by(month, origin) %>% 
+  summarize(count = n(), delay = sum(dep_delay)) %>% 
+  mutate(delay_per_flight = delay / count) %>% 
+  select(month, origin, delay_per_flight) %>% 
+  pivot_wider(names_from = origin, values_from = delay_per_flight)
+
+```
+
+### **Departure Delay - Airline Companies**
+
+Frontier Airlines, Expressjet Airlines and Mesa Airlines are potential *late-flyers*.
+
+```{r}
+carrier_delay <- flights %>% 
+  filter(!is.na(dep_delay)) %>% 
+  group_by(carrier) %>% 
+  summarize(count = n(), delay = sum(dep_delay)) %>% 
+  transmute(carrier, delay_per_flight = delay / count) %>% 
+  arrange(desc(delay_per_flight))
+carrier_delay
+```
+## **Case 2: Average Speed**
+
+Average speed in miles is calculated per flight using the distance and time spent in the air.
+
+### **Speed of Flights - Months of the Year**
+
+Average speed of planes peaks during summer time. Weather conditions (less wind, less friction) is a potential factor.
+
+One other factor might be the motivation of pilots to increase their speed and stick to the scheduled arrival time as a result of high delay periods during summer season. 
+
+```{r}
+month_speed <- flights %>% 
+  filter(!is.na(air_time)) %>% 
+  transmute(avg_speed = (distance / air_time)*60, month) %>% 
+  group_by(month) %>% 
+  summarize(mean_speed = mean(avg_speed))
+
+print(month_speed)
+
+```
+
+
+### **Speed of Flights - Airline Companies**
+
+This table shows the average speed of carriers in their flights. 
+
+Hawaiian Airlines, Virgin America and Alaska Airline are on top consecutively.
+
+```{r}
+
+carrier_speed <- flights %>% 
+  filter(!is.na(air_time)&!is.na(dep_delay)) %>% 
+  transmute(avg_speed = (distance / air_time)*60, month, carrier) %>% 
+  group_by(carrier) %>% 
+  summarize(mean = mean(avg_speed)) %>% 
+  arrange(desc(mean))
+carrier_speed
+```
+
+
+### **Relation Between Speed and Departure Delays**
+
+```{r, message=FALSE}
+
+carrier_joint <- full_join(carrier_delay, carrier_speed,by="carrier")
+
+ggplot(carrier_joint, aes(x=delay_per_flight, y = mean)) + 
+  geom_point() + geom_smooth(method = "lm") + labs(x = "Average Departure Delay per Flight (minute)", y = "Average Speed", title = "Speed vs Departure Delay") + geom_text(aes(label = carrier), nudge_x = 0.5, nudge_y = 0.1, check_overlap = T)
+```
+

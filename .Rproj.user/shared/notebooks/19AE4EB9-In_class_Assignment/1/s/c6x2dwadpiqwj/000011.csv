@@ -1,0 +1,6 @@
+"0","flights %>% "
+"0","  filter(!is.na(dep_delay)) %>% "
+"0","  group_by(carrier) %>% "
+"0","  summarize(count = n(), delay = sum(dep_delay)) %>% "
+"0","  transmute(carrier, delay_per_flight = delay / count) %>% "
+"0","  arrange(desc(delay_per_flight))"

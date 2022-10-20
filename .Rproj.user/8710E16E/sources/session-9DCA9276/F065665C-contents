@@ -1,0 +1,23 @@
+#Which airway companies' flight speed is highest on average?
+flights %>% 
+  mutate(speed_per_hour = (distance / air_time)*60)%>%
+  group_by(carrier)%>%
+  summarize(avg_speed_carrier_per_hour = mean(speed_per_hour, na.rm = TRUE))%>%
+  arrange(desc(avg_speed_carrier_per_hour))%>%
+  print(.,n=3)
+
+
+#Which airway companies experience departure delay most on average?
+flights %>%
+  group_by(carrier)%>%
+  summarize(avg_delay_airway = mean(dep_delay, na.rm = TRUE))%>%
+  arrange(desc(avg_delay_airway))
+
+#In Which airports departure delay is highest? 
+flights %>%
+  group_by(origin)%>%
+  summarize(avg_delay_airport = mean(dep_delay, na.rm = TRUE))%>%
+  arrange(desc(avg_delay_airport))
+
+flights %>%
+  distinct(origin)

@@ -1,0 +1,8 @@
+?mean()
+library(nycflights13)
+library(tidyverse)
+library(ggplot2)
+flights %>% 
+  glimpse()
+airlines %>% 
+  head(n=35)
