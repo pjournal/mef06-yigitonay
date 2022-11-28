@@ -74,6 +74,13 @@
     "href": "shiny.html#command-line-for-the-shinny-web-application",
     "title": "3  Shiny App",
     "section": "3.2 Command Line for the Shinny Web Application",
-    "text": "3.2 Command Line for the Shinny Web Application\n\nshiny::runGitHub(\"pjournal/mef06-yigitonay\",subdir=\"Shiny/\", ref = \"gh-pages\")"
+    "text": "3.2 Command Line for the Shinny Web Application\n\nshiny::runGitHub(\"pjournal/mef06-yigitonay\",subdir=\"Shiny/\")"
+  },
+  {
+    "objectID": "assignment1.html#introducing-myself",
+    "href": "assignment1.html#introducing-myself",
+    "title": "1  BDA-503 Data Analytics Essentials: Assignment 1",
+    "section": "1.1 Introducing Myself",
+    "text": "1.1 Introducing Myself\nHi. This is Yigit. I was born in Ankara, in 1990. I obtained my undergraduate degree from Department of Economics at Bogazici University. After my graduation, I passed the three-stage examination process of Turkiye İş Bankası and started as assistant auditor, which gave me a solid background in banking sector such as the business structure of both headquarters, branches, and their subsidiaries, risk analysis of loan portfolios of corporates and SMEs.\nAs an advancement in my career, I passed the researcher examination of The Central Bank of Republic of Turkey (CBRT) Turkey, and started to work as a researcher. Currently, I am working in Markets Department as an assistant economist in CBRT. My fields of interests consist of macroeconomics, financial modelling and empirical asset pricing in general. To be more specific, most of my studies are about pricing of financial derivatives. Some of my papers with my colleagues are The Determinants of Currency Risk Premium in Emerging Market Countries, A Measure of Turkey’s Sovereign and Banking Sector Credit Risk: Asset Swap Spreads.\nAs we live in a world of massive data, being able to use them efficiently is crucial. The processes of collecting data, analysing them, illustrating the results and preparing automated reports as well as being able to apply modern machine learning techniques to macro-financial data are the main accomplishments I want to make at the end of the Big Data Analytics program.\nYou can reach me via my linkedin page."
   }
 ]
