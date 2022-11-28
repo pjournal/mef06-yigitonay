@@ -11,6 +11,7 @@ output:
 This section demonstrates a Shiny web application with [Data](https://github.com/pjournal/mef06-yigitonay/tree/main/Shiny) on **Foreign Students in Turkish Universities by Their Nationality**.
 
 ## Application
+
 Shiny web application can be accessed via this [link](https://y94k9h-yigit-onay.shinyapps.io/shiny/)
 
 Data processing is accomplished with a few manipulation steps to ready data for further use.
