@@ -1,7 +1,0 @@
-"0",""
-"0","flights %>% "
-"0","  filter(!is.na(air_time)&!is.na(dep_delay)) %>% "
-"0","  transmute(avg_speed = (distance / air_time)*60, month, carrier) %>% "
-"0","  group_by(carrier) %>% "
-"0","  summarize(mean = mean(avg_speed)) %>% "
-"0","  arrange(desc(mean))"

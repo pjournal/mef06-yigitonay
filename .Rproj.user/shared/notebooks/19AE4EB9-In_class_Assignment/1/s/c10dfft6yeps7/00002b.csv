@@ -1,5 +1,0 @@
-"0",""
-"0","carrier_joint <- full_join(carrier_delay, carrier_speed,by=""carrier"")"
-"0",""
-"0","ggplot(carrier_joint, aes(x=delay_per_flight, y = mean)) + "
-"0","  geom_point() + geom_smooth(method = ""lm"") + labs(x = ""Average Departure Delay per Flight (minutes)"", y = ""Average Speed"", title = ""Speed vs Departure Delay"") + geom_text(aes(label = carrier), nudge_x = 0.5, nudge_y = 0.1, check_overlap = T)"

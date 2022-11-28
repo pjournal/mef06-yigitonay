@@ -1,7 +1,0 @@
-"0","flights %>% "
-"0","  filter(!is.na(dep_delay)) %>% "
-"0","  group_by(month, origin) %>% "
-"0","  summarize(count = n(), delay = sum(dep_delay)) %>% "
-"0","  mutate(delay_per_flight = delay / count) %>% "
-"0","  select(month, origin, delay_per_flight) %>% "
-"0","  pivot_wider(names_from = origin, values_from = delay_per_flight)"

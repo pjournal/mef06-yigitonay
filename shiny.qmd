@@ -1,0 +1,30 @@
+---
+title: "Shiny App"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float: true
+---
+
+
+
+This section demonstrates a Shiny web application with [Data on Foreign Students in Turkish Universities by Their Nationality](https://github.com/pjournal/mef06-yigitonay/shiny/).
+
+## Application
+Shiny web application can be accessed via this [link](https://y94k9h-yigit-onay.shinyapps.io/shiny/)
+
+Data processing is accomplished with a few manipulation steps to ready data for further use.
+
+A web application is then developed plotting a bar chart of **top 10 nationalities of foreign students** according to the selection of the user regarding *city, type and name* of the university. 
+
+The inputs in the application feeds each other in the order of **[city > type > name]** dynamically.
+
+Bar chart also gives information about gender distribution for each nationality.
+
+## Command Line for the Shinny Web Application
+
+```{r eval=FALSE}
+shiny::runGitHub("pjournal/mef06-yigitonay",subdir="Shiny/", ref = "gh-pages")
+```
+

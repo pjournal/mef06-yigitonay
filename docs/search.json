@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Yigit Onay Progress Journal",
     "section": "",
-    "text": "This progress journal covers Yiğit Onay’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
+    "text": "Introduction\n\nThis progress journal covers Yiğit Onay’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
   },
   {
     "objectID": "assignment1.html",
@@ -54,5 +54,26 @@
     "title": "2  In-Class Assignment 1",
     "section": "2.1 Case 1: Average Departure Delay",
     "text": "2.1 Case 1: Average Departure Delay\n\n2.1.1 Average Departure Delay - Months of the Year\nAs seen in table below, delays per flight follows a similar pattern among three departure airports in the data:\n\nDelays seem to peak in the summer season.\nDecember also stands out as one of the month when delays rise dramatically as compared to previous month for all three departure airports due to christmas effect.\nWhen considered with number of flights in respective times of the year, although there is no major differences across different months of the year in terms of the number of flights, average delay time per flight changes drastically!.\n\nImportant note for the results below is that, cancelled flights are excluded from calculations as delay information does not exist for those flights in the data table.\n\nflights %>% \n  filter(!is.na(dep_delay)) %>% \n  group_by(month, origin) %>% \n  summarize(count = n(), delay = sum(dep_delay)) %>% \n  mutate(delay_per_flight = delay / count) %>% \n  select(month, origin, delay_per_flight) %>% \n  pivot_wider(names_from = origin, values_from = delay_per_flight)\n\n# A tibble: 12 × 4\n# Groups:   month [12]\n   month   EWR   JFK   LGA\n   <int> <dbl> <dbl> <dbl>\n 1     1 14.9   8.62  5.64\n 2     2 13.1  11.8   6.96\n 3     3 18.1  10.7  10.2 \n 4     4 17.4  12.2  11.5 \n 5     5 15.4  12.5  10.6 \n 6     6 22.5  20.5  19.3 \n 7     7 22.0  23.8  19.0 \n 8     8 13.5  12.9  11.2 \n 9     9  7.29  6.64  6.21\n10    10  8.64  4.59  5.31\n11    11  6.72  4.68  4.77\n12    12 21.0  14.8  13.6 \n\n\n\n\n2.1.2 Departure Delay - Airline Companies\nFrontier Airlines, Expressjet Airlines and Mesa Airlines are potential late-flyers.\n\ncarrier_delay <- flights %>% \n  filter(!is.na(dep_delay)) %>% \n  group_by(carrier) %>% \n  summarize(count = n(), delay = sum(dep_delay)) %>% \n  transmute(carrier, delay_per_flight = delay / count) %>% \n  arrange(desc(delay_per_flight))\ncarrier_delay\n\n# A tibble: 16 × 2\n   carrier delay_per_flight\n   <chr>              <dbl>\n 1 F9                 20.2 \n 2 EV                 20.0 \n 3 YV                 19.0 \n 4 FL                 18.7 \n 5 WN                 17.7 \n 6 9E                 16.7 \n 7 B6                 13.0 \n 8 VX                 12.9 \n 9 OO                 12.6 \n10 UA                 12.1 \n11 MQ                 10.6 \n12 DL                  9.26\n13 AA                  8.59\n14 AS                  5.80\n15 HA                  4.90\n16 US                  3.78"
+  },
+  {
+    "objectID": "shiny.html",
+    "href": "shiny.html",
+    "title": "3  Shiny App",
+    "section": "",
+    "text": "This section demonstrates a Shiny web application with Data on Foreign Students in Turkish Universities by Their Nationality.\n\n3.0.1 Application\nShiny web application can be accessed via this link\nData processing is accomplished with a few manipulation steps to ready data for further use.\nA web application is then developed plotting a bar chart of top 10 nationalities of foreign students according to the selection of the user regarding city, type and name of the university.\nThe inputs in the application feeds each other in the order of [city > type > name] dynamically.\nBar chart also gives information about gender distribution for each nationality.\n\n\n3.0.2 Command Line for the Shinny Web Application\n\nshiny::runGitHub(\"pjournal/mef06-yigitonay\",subdir=\"Shiny/\", ref = \"gh-pages\")"
+  },
+  {
+    "objectID": "shiny.html#application",
+    "href": "shiny.html#application",
+    "title": "3  Shiny App",
+    "section": "3.1 Application",
+    "text": "3.1 Application\nShiny web application can be accessed via this link\nData processing is accomplished with a few manipulation steps to ready data for further use.\nA web application is then developed plotting a bar chart of top 10 nationalities of foreign students according to the selection of the user regarding city, type and name of the university.\nThe inputs in the application feeds each other in the order of [city > type > name] dynamically.\nBar chart also gives information about gender distribution for each nationality."
+  },
+  {
+    "objectID": "shiny.html#command-line-for-the-shinny-web-application",
+    "href": "shiny.html#command-line-for-the-shinny-web-application",
+    "title": "3  Shiny App",
+    "section": "3.2 Command Line for the Shinny Web Application",
+    "text": "3.2 Command Line for the Shinny Web Application\n\nshiny::runGitHub(\"pjournal/mef06-yigitonay\",subdir=\"Shiny/\", ref = \"gh-pages\")"
   }
 ]
