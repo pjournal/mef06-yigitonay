@@ -1,5 +1,5 @@
 ---
-title: "Shiny App"
+title: "**Shiny App**"
 format:
   html:
     toc: true
@@ -9,7 +9,7 @@ format:
 
 
 
-This section demonstrates a Shiny web application with [Data on Foreign Students in Turkish Universities by Their Nationality](https://github.com/pjournal/mef06-yigitonay/shiny/).
+This section demonstrates a Shiny web application with [Data](https://github.com/pjournal/mef06-yigitonay/shiny/) on **Foreign Students in Turkish Universities by Their Nationality**.
 
 ## Application
 Shiny web application can be accessed via this [link](https://y94k9h-yigit-onay.shinyapps.io/shiny/)
