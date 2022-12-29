@@ -1,0 +1,32 @@
+---
+title: "**Operations Research Case Study**"
+author: "*Yiğit Onay*"
+highlight-style: pygments
+date: "2022-12-29"
+format: html
+editor: visual
+---
+
+## Robeco: Investment Portfolio Optimization
+
+This note summarizes the [case study](https://www.gurobi.com/wp-content/uploads/2022/08/CaseStudy-2021Jul-Robeco_Eng.pdf?x58432) of [Robeco](https://www.robeco.com/en-int/) in pursuit of exemplfying an application and importance of operations research tools within the financial industry.
+
+![](https://www.investmentofficer.nl/sites/default/files/styles/large/public/HH-56350412.jpg?itok=xEroXsMJ)
+
+Robeco, headquartered in the Netherlands, is a global asset management firm specialized in fixed income portfolios having assets under management of EUR 176 billion (as of December 2020).
+
+The company aimed to enhance its portfolio management process of systematic fixed income portfolios by switching to a superior mathematical optimization solver for the systematic fixed-income portfolio optimization process from its legacy mathematical optimization solvers (commercial and open source).
+
+The criteria Robeco determined for the new tool to meet were that it should provide:
+
+-   the necessary problem-solving speed,
+-   robustness,
+-   flexibility,
+-   right technical support and
+-   a scalable deployment architecture.
+
+Robeco chose Gurobi Optimizer as a new tool to run its systematic portfolio optimization process among various alternatives based on the criteria mentioned above.
+
+During the transition process, the ease of use when incorporating the software in both Robeco's MATLAB and Python models, enabled a smooth transition.
+
+After the adoption of Gurobi optimizer, efficient creation of optimal investment portfolios and greater integration within the company with deployment in a cloud based environment, enable more in-depth and extensive analysis of investment portfolios which is crucial to enhance the portfolio's performance in terms of risk and return.

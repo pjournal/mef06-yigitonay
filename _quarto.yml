@@ -10,6 +10,7 @@ book:
     - assignment1.qmd
     - In_class_Assignment.qmd
     - shiny.qmd
+    - or_case_study.qmd
   page-footer: 
     center: "[MEF BDA 503](https://mef-bda503.github.io)" 
   sharing: [twitter, facebook]
